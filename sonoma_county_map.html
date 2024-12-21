@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7576a7304751fea044853e43bec113f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b7576a7304751fea044853e43bec113f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b7576a7304751fea044853e43bec113f = L.map(
+                "map_b7576a7304751fea044853e43bec113f",
+                {
+                    center: [38.576, -122.945],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ebd315af01db4ebf9dece0c41aa6dff7 = L.tileLayer(
+                "https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ebd315af01db4ebf9dece0c41aa6dff7.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_0a5a860755e8fba5d367c5006dc51f6b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0a5a860755e8fba5d367c5006dc51f6b = L.geoJson(null, {
+                onEachFeature: geo_json_0a5a860755e8fba5d367c5006dc51f6b_onEachFeature,
+            
+        });
+
+        function geo_json_0a5a860755e8fba5d367c5006dc51f6b_add (data) {
+            geo_json_0a5a860755e8fba5d367c5006dc51f6b
+                .addData(data);
+        }
+            geo_json_0a5a860755e8fba5d367c5006dc51f6b_add({"features": [{"geometry": {"coordinates": [[-122.87110610763452, 38.53156668030084], [-122.86821312967845, 38.53073364151567], [-122.8683669485472, 38.52970621373089], [-122.86955608672557, 38.52956737101286], [-122.8696921572634, 38.52961365194898], [-122.87074522490391, 38.52969695755826], [-122.87162080923423, 38.53003480709569], [-122.87132500371712, 38.531423213197655], [-122.87111202374507, 38.5315713082673]], "type": "LineString"}, "properties": {"Name": "Allen Vineyard"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.87030151662825, 38.52948869335398], "type": "Point"}, "id": 1, "properties": {"Name": "Allen Vineyard"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_0a5a860755e8fba5d367c5006dc51f6b.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_0a5a860755e8fba5d367c5006dc51f6b.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_0a5a860755e8fba5d367c5006dc51f6b.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_916eb9c300330d6c61208e9f56b158e0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_916eb9c300330d6c61208e9f56b158e0 = L.geoJson(null, {
+                onEachFeature: geo_json_916eb9c300330d6c61208e9f56b158e0_onEachFeature,
+            
+        });
+
+        function geo_json_916eb9c300330d6c61208e9f56b158e0_add (data) {
+            geo_json_916eb9c300330d6c61208e9f56b158e0
+                .addData(data);
+        }
+            geo_json_916eb9c300330d6c61208e9f56b158e0_add({"features": [{"geometry": {"coordinates": [[-122.87319891503759, 38.559346636289575], [-122.87316606121715, 38.55974226843972], [-122.87294265523767, 38.5598758580243], [-122.87084001072591, 38.559320945814704], [-122.87041948182343, 38.55897155444751], [-122.87041291105947, 38.5588019962606], [-122.86901990907026, 38.557769224118914], [-122.86906590441895, 38.55752772799477], [-122.86927616887019, 38.557260539848585], [-122.86993324528007, 38.55704987157105], [-122.87084658149021, 38.556972797657295], [-122.87155622401272, 38.55662853316497], [-122.87339603796059, 38.55650521413935], [-122.87341575025314, 38.55596569091685], [-122.8759980605443, 38.5560530425704], [-122.87614918811863, 38.55681351130562], [-122.87784444525612, 38.5572348486281], [-122.8793951455836, 38.55713208365543], [-122.87994708976821, 38.55782574437123], [-122.8776736053896, 38.55782574437123], [-122.87603748512869, 38.55733761345442], [-122.87603091436475, 38.55782574437123], [-122.87351431171447, 38.55786171178136], [-122.8735734485914, 38.558786581860204], [-122.87314634892496, 38.5588019962606], [-122.87319891503759, 38.5593312220054]], "type": "LineString"}, "properties": {"Name": "Bacigalupi"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.8739216990887, 38.558478293156156], "type": "Point"}, "id": 1, "properties": {"Name": "Bacigalupi"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_916eb9c300330d6c61208e9f56b158e0.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_916eb9c300330d6c61208e9f56b158e0.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_916eb9c300330d6c61208e9f56b158e0.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f = L.geoJson(null, {
+                onEachFeature: geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f_onEachFeature,
+            
+        });
+
+        function geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f_add (data) {
+            geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f
+                .addData(data);
+        }
+            geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f_add({"features": [{"geometry": {"coordinates": [[-122.87229577752873, 38.54987400243468], [-122.87160515607567, 38.549938952528066], [-122.87095387381909, 38.549679151802565], [-122.87101506812506, 38.54730329899854], [-122.872287035485, 38.54730671754868], [-122.87294705978509, 38.54752208584776], [-122.87289897854487, 38.54808272411046], [-122.87334919379582, 38.548356204603806], [-122.87358959999793, 38.548715146172015], [-122.87358522897593, 38.54903648281848], [-122.87264108825528, 38.549063830551944], [-122.87229140650675, 38.54928603049976], [-122.8723001485505, 38.54986032872293]], "type": "LineString"}, "properties": {"Name": "Bucher"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.87284991071408, 38.549218598323165], "type": "Point"}, "id": 1, "properties": {"Name": "Bucher"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_a605b36cf52ff923717b5fe393b4b113_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a605b36cf52ff923717b5fe393b4b113 = L.geoJson(null, {
+                onEachFeature: geo_json_a605b36cf52ff923717b5fe393b4b113_onEachFeature,
+            
+        });
+
+        function geo_json_a605b36cf52ff923717b5fe393b4b113_add (data) {
+            geo_json_a605b36cf52ff923717b5fe393b4b113
+                .addData(data);
+        }
+            geo_json_a605b36cf52ff923717b5fe393b4b113_add({"features": [{"geometry": {"coordinates": [[-122.84857295450502, 38.55463919962011], [-122.84731214921405, 38.5546285978171], [-122.84697322306087, 38.55255061430478], [-122.84732570626025, 38.55249760373576], [-122.84735282035263, 38.55110871289821], [-122.84701389419908, 38.55068461874535], [-122.84660718281492, 38.55068461874535], [-122.84634959893849, 38.5473872013784], [-122.84634959893849, 38.54540443711042], [-122.84671563918407, 38.545255992666085], [-122.84952194773439, 38.545298405395926], [-122.84958973296534, 38.54732358412218], [-122.85184020262385, 38.5473447898805], [-122.85171818920891, 38.55101329193195], [-122.85143349123973, 38.55121473604527], [-122.84891188065819, 38.55341998206171], [-122.84860006859739, 38.55463919962011]], "type": "LineString"}, "properties": {"Name": "Calegari"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.84958973296534, 38.550260522091605], "type": "Point"}, "id": 1, "properties": {"Name": "Calegari"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_a605b36cf52ff923717b5fe393b4b113.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_a605b36cf52ff923717b5fe393b4b113.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_a605b36cf52ff923717b5fe393b4b113.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_7b0b0aecd04981213f0c2f8cc07cac28_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7b0b0aecd04981213f0c2f8cc07cac28 = L.geoJson(null, {
+                onEachFeature: geo_json_7b0b0aecd04981213f0c2f8cc07cac28_onEachFeature,
+            
+        });
+
+        function geo_json_7b0b0aecd04981213f0c2f8cc07cac28_add (data) {
+            geo_json_7b0b0aecd04981213f0c2f8cc07cac28
+                .addData(data);
+        }
+            geo_json_7b0b0aecd04981213f0c2f8cc07cac28_add({"features": [{"geometry": {"coordinates": [[-123.0034881329536, 38.39801083361729], [-122.99784818707982, 38.39570725381711], [-122.99663621901551, 38.395251016642106], [-122.99520476067184, 38.394936884454864], [-122.99347746760404, 38.395078992041476], [-122.99190286342598, 38.39548287523809], [-122.99285716898825, 38.39759200638571], [-122.99312437454593, 38.39990300497351], [-122.9934106662144, 38.40004510279968], [-122.9939450773295, 38.39989552613338], [-122.9941836537202, 38.39978334343016], [-122.99460354816765, 38.39985813191808], [-122.99565328428625, 38.40011989101674], [-122.99593003289934, 38.40000770866172], [-122.99798178985853, 38.4001124121983], [-122.99791498846918, 38.39883352290127], [-122.99661713290419, 38.397367633656756], [-122.9976668690228, 38.39856428016611], [-122.99797224680286, 38.39846705337675], [-122.99773367041215, 38.397345196344844], [-123.00132185932702, 38.39887091764663], [-123.00154134960641, 38.39819780927672], [-123.00217119127757, 38.39832495244863], [-123.0029250926718, 38.39859419607518], [-123.00344041767556, 38.398048228788184]], "type": "LineString"}, "properties": {"Name": "Coastlands"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.99833694103249, 38.39808838821588], "type": "Point"}, "id": 1, "properties": {"Name": "Coastlands"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_7b0b0aecd04981213f0c2f8cc07cac28.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_7b0b0aecd04981213f0c2f8cc07cac28.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_7b0b0aecd04981213f0c2f8cc07cac28.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_064d2b6f853de051e52c43466ced56e9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_064d2b6f853de051e52c43466ced56e9 = L.geoJson(null, {
+                onEachFeature: geo_json_064d2b6f853de051e52c43466ced56e9_onEachFeature,
+            
+        });
+
+        function geo_json_064d2b6f853de051e52c43466ced56e9_add (data) {
+            geo_json_064d2b6f853de051e52c43466ced56e9
+                .addData(data);
+        }
+            geo_json_064d2b6f853de051e52c43466ced56e9_add({"features": [{"geometry": {"coordinates": [[-122.97607396027756, 38.51575820333804], [-122.9778922310507, 38.51480123587274], [-122.97949035244798, 38.51334662096346], [-122.98094986127482, 38.513212641796315], [-122.98026495210475, 38.515764583077924], [-122.98028125946601, 38.516364276152956], [-122.97840591292825, 38.51785710742848], [-122.97662025687762, 38.518463162572544], [-122.97613103604174, 38.51847592157375], [-122.9757967351371, 38.51864178837823], [-122.9750058281191, 38.51849506007065], [-122.97600057715212, 38.51575182359687]], "type": "LineString"}, "properties": {"Name": "Drake Estate"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.97622888020882, 38.515522152544946], "type": "Point"}, "id": 1, "properties": {"Name": "Drake Estate"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_064d2b6f853de051e52c43466ced56e9.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_064d2b6f853de051e52c43466ced56e9.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_064d2b6f853de051e52c43466ced56e9.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e = L.geoJson(null, {
+                onEachFeature: geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e_onEachFeature,
+            
+        });
+
+        function geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e_add (data) {
+            geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e
+                .addData(data);
+        }
+            geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e_add({"features": [{"geometry": {"coordinates": [[-122.77808705912204, 38.4816571416917], [-122.77678048803192, 38.48165314640465], [-122.77678048803192, 38.478085266406964], [-122.7777910391092, 38.47808926189177], [-122.77777062393612, 38.480690275697015], [-122.7781125780886, 38.4810938039908], [-122.7781125780886, 38.48166513226596]], "type": "LineString"}, "properties": {"Name": "Fanucchi-Wood Rd"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.77732149012394, 38.48124562593179], "type": "Point"}, "id": 1, "properties": {"Name": "Fanucchi-Wood Rd"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_9c0aeeaa032173fcfd921a7c7a298f8a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9c0aeeaa032173fcfd921a7c7a298f8a = L.geoJson(null, {
+                onEachFeature: geo_json_9c0aeeaa032173fcfd921a7c7a298f8a_onEachFeature,
+            
+        });
+
+        function geo_json_9c0aeeaa032173fcfd921a7c7a298f8a_add (data) {
+            geo_json_9c0aeeaa032173fcfd921a7c7a298f8a
+                .addData(data);
+        }
+            geo_json_9c0aeeaa032173fcfd921a7c7a298f8a_add({"features": [{"geometry": {"coordinates": [[-122.84334039958095, 38.525140107097485], [-122.84250765655872, 38.52523633215344], [-122.84251851842522, 38.52369272373468], [-122.84221778598464, 38.52367248419071], [-122.84221851825805, 38.52166154507421], [-122.84757645277827, 38.52137870176608], [-122.84758800468907, 38.521702581022936], [-122.84676369022267, 38.52168031330649], [-122.8464615188607, 38.522135778390975], [-122.84598817243986, 38.522146106304575], [-122.8454984124401, 38.52248003761321], [-122.84501817747704, 38.52258549227727], [-122.84476577423251, 38.52305368175348], [-122.84415711211147, 38.522864787027316], [-122.84406506833633, 38.52257188640155], [-122.8434887969594, 38.52277999497443], [-122.84319724893649, 38.523687403991204], [-122.84333073625695, 38.525117401834706]], "type": "LineString"}, "properties": {"Name": "Foss"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.8437811329812, 38.523676638584874], "type": "Point"}, "id": 1, "properties": {"Name": "Foss"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_9c0aeeaa032173fcfd921a7c7a298f8a.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_9c0aeeaa032173fcfd921a7c7a298f8a.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_9c0aeeaa032173fcfd921a7c7a298f8a.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_518734db6f3dcd05049ac9c7386f03b7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_518734db6f3dcd05049ac9c7386f03b7 = L.geoJson(null, {
+                onEachFeature: geo_json_518734db6f3dcd05049ac9c7386f03b7_onEachFeature,
+            
+        });
+
+        function geo_json_518734db6f3dcd05049ac9c7386f03b7_add (data) {
+            geo_json_518734db6f3dcd05049ac9c7386f03b7
+                .addData(data);
+        }
+            geo_json_518734db6f3dcd05049ac9c7386f03b7_add({"features": [{"geometry": {"coordinates": [[-122.39855586420542, 38.4691859010656], [-122.39808359932692, 38.467286672709804], [-122.39020536248967, 38.458378120030716], [-122.3885524354149, 38.45906731148611], [-122.39048442809987, 38.46216018717786], [-122.38771523858463, 38.46342083215981], [-122.38900323370794, 38.46513527397508], [-122.39145042444207, 38.464126783725135], [-122.39260962005315, 38.465958863884794], [-122.38767230541399, 38.46816066011306], [-122.3886812349271, 38.469337164890334], [-122.38367952053187, 38.47163969726637], [-122.38717857395002, 38.475068149366024], [-122.3967956042036, 38.470681718274875], [-122.39643067225214, 38.470211127442184], [-122.39853439761995, 38.46923632237588]], "type": "LineString"}, "properties": {"Name": "Georges III"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.39778306713156, 38.470110286149946], "type": "Point"}, "id": 1, "properties": {"Name": "Georges III"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_518734db6f3dcd05049ac9c7386f03b7.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_518734db6f3dcd05049ac9c7386f03b7.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_518734db6f3dcd05049ac9c7386f03b7.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_df1be94ff75274d075e8b758a1e4dea9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_df1be94ff75274d075e8b758a1e4dea9 = L.geoJson(null, {
+                onEachFeature: geo_json_df1be94ff75274d075e8b758a1e4dea9_onEachFeature,
+            
+        });
+
+        function geo_json_df1be94ff75274d075e8b758a1e4dea9_add (data) {
+            geo_json_df1be94ff75274d075e8b758a1e4dea9
+                .addData(data);
+        }
+            geo_json_df1be94ff75274d075e8b758a1e4dea9_add({"features": [{"geometry": {"coordinates": [[-122.93377501333825, 38.421605100183086], [-122.93114642595302, 38.42157510904664], [-122.93118470635198, 38.41885586096575], [-122.93567627314586, 38.41891584548307], [-122.93608459739957, 38.418515947758124], [-122.93603355686801, 38.41816603543282], [-122.93581663460799, 38.417826118979406], [-122.93658224258421, 38.41718627190545], [-122.94037200206643, 38.41568660811933], [-122.94032096153485, 38.420835323748804], [-122.93877698544938, 38.42133517951012], [-122.93380053360387, 38.42161509722544]], "type": "LineString"}, "properties": {"Name": "Heintz"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.93633980005858, 38.41941571452662], "type": "Point"}, "id": 1, "properties": {"Name": "Heintz"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_df1be94ff75274d075e8b758a1e4dea9.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_df1be94ff75274d075e8b758a1e4dea9.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_df1be94ff75274d075e8b758a1e4dea9.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_09a937d187102a8b7f1290575e198dcb_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_09a937d187102a8b7f1290575e198dcb = L.geoJson(null, {
+                onEachFeature: geo_json_09a937d187102a8b7f1290575e198dcb_onEachFeature,
+            
+        });
+
+        function geo_json_09a937d187102a8b7f1290575e198dcb_add (data) {
+            geo_json_09a937d187102a8b7f1290575e198dcb
+                .addData(data);
+        }
+            geo_json_09a937d187102a8b7f1290575e198dcb_add({"features": [{"geometry": {"coordinates": [-123.24879787824156, 38.572726730743426], "type": "Point"}, "id": 0, "properties": {"Name": "Hirsch"}, "type": "Feature"}, {"geometry": {"coordinates": [[-123.24888370893005, 38.57022706616834], [-123.24847601315976, 38.57060453787045], [-123.24798248670095, 38.5706968084294], [-123.24786446950445, 38.5711665476189], [-123.24752114675044, 38.57192986725161], [-123.24768207929134, 38.57204730032146], [-123.24816487691405, 38.57182082208655], [-123.24865840337284, 38.57134269902315], [-123.24890516660224, 38.57133431087058], [-123.24953816792976, 38.57053743193481], [-123.24929140470036, 38.57045354942758], [-123.24931286237256, 38.57032772548311], [-123.24892662427445, 38.57021028960264]], "type": "LineString"}, "properties": {"Name": "Hirsch"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_09a937d187102a8b7f1290575e198dcb.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_09a937d187102a8b7f1290575e198dcb.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_09a937d187102a8b7f1290575e198dcb.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_826128774ff5545fd27dcdee7d0ee7d1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_826128774ff5545fd27dcdee7d0ee7d1 = L.geoJson(null, {
+                onEachFeature: geo_json_826128774ff5545fd27dcdee7d0ee7d1_onEachFeature,
+            
+        });
+
+        function geo_json_826128774ff5545fd27dcdee7d0ee7d1_add (data) {
+            geo_json_826128774ff5545fd27dcdee7d0ee7d1
+                .addData(data);
+        }
+            geo_json_826128774ff5545fd27dcdee7d0ee7d1_add({"features": [{"geometry": {"coordinates": [[-122.80288502701194, 38.477456693885614], [-122.79761739453583, 38.47741445282793], [-122.79759716035194, 38.47451032077777], [-122.80281757973323, 38.47452616181528], [-122.80291875065166, 38.47746725414589]], "type": "LineString"}, "properties": {"Name": "Martaella"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.8021768305844, 38.47721908761463], "type": "Point"}, "id": 1, "properties": {"Name": "Martaella"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_826128774ff5545fd27dcdee7d0ee7d1.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_826128774ff5545fd27dcdee7d0ee7d1.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_826128774ff5545fd27dcdee7d0ee7d1.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_5f00b4724dc5f9d4a28be0174001a237_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5f00b4724dc5f9d4a28be0174001a237 = L.geoJson(null, {
+                onEachFeature: geo_json_5f00b4724dc5f9d4a28be0174001a237_onEachFeature,
+            
+        });
+
+        function geo_json_5f00b4724dc5f9d4a28be0174001a237_add (data) {
+            geo_json_5f00b4724dc5f9d4a28be0174001a237
+                .addData(data);
+        }
+            geo_json_5f00b4724dc5f9d4a28be0174001a237_add({"features": [{"geometry": {"coordinates": [[-122.38485357541825, 38.41480216727666], [-122.38859695391241, 38.411364310115744], [-122.38623911161419, 38.40975484154984], [-122.38337080861237, 38.412288071739454], [-122.38479280628695, 38.41480216727666]], "type": "LineString"}, "properties": {"Name": "Missouri Hopper"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.38543695907978, 38.41458313970469], "type": "Point"}, "id": 1, "properties": {"Name": "Missouri Hopper"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_5f00b4724dc5f9d4a28be0174001a237.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_5f00b4724dc5f9d4a28be0174001a237.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_5f00b4724dc5f9d4a28be0174001a237.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_b2f30c24833b8cea670814d48ef94d3a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b2f30c24833b8cea670814d48ef94d3a = L.geoJson(null, {
+                onEachFeature: geo_json_b2f30c24833b8cea670814d48ef94d3a_onEachFeature,
+            
+        });
+
+        function geo_json_b2f30c24833b8cea670814d48ef94d3a_add (data) {
+            geo_json_b2f30c24833b8cea670814d48ef94d3a
+                .addData(data);
+        }
+            geo_json_b2f30c24833b8cea670814d48ef94d3a_add({"features": [{"geometry": {"coordinates": [[-122.81643245639503, 38.480522001064315], [-122.8163594092178, 38.478463391865745], [-122.82088468185594, 38.47844051809989], [-122.82088468185594, 38.479083839994246], [-122.82005559639265, 38.479541309848], [-122.82007385818676, 38.479981621840324], [-122.8198839355257, 38.47997876268042], [-122.8198875878847, 38.48052771934147], [-122.81642515167748, 38.48054201503149]], "type": "LineString"}, "properties": {"Name": "Olivet Ln"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.8204500511503, 38.47947840791514], "type": "Point"}, "id": 1, "properties": {"Name": "Olivet Ln"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_b2f30c24833b8cea670814d48ef94d3a.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_b2f30c24833b8cea670814d48ef94d3a.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_b2f30c24833b8cea670814d48ef94d3a.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_a905d49ee1aacf48ceae05b9acd46150_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a905d49ee1aacf48ceae05b9acd46150 = L.geoJson(null, {
+                onEachFeature: geo_json_a905d49ee1aacf48ceae05b9acd46150_onEachFeature,
+            
+        });
+
+        function geo_json_a905d49ee1aacf48ceae05b9acd46150_add (data) {
+            geo_json_a905d49ee1aacf48ceae05b9acd46150
+                .addData(data);
+        }
+            geo_json_a905d49ee1aacf48ceae05b9acd46150_add({"features": [{"geometry": {"coordinates": [[-122.8664835425412, 38.535661140007534], [-122.86398452505799, 38.53538298855324], [-122.86294738341473, 38.53491167391266], [-122.86224607811324, 38.534818955914545], [-122.86175220114035, 38.534131293700995], [-122.86097187552289, 38.53351316475374], [-122.8609027327467, 38.53323500499454], [-122.8607644471943, 38.532918210626065], [-122.8611002835358, 38.531195133900894], [-122.86129783432519, 38.53111786491971], [-122.8613669771014, 38.530561525804416], [-122.86192999685048, 38.53021381167326], [-122.86267081230994, 38.52929429287346], [-122.86555505383211, 38.52998200131927], [-122.86820223440722, 38.529611103198334], [-122.86803431623635, 38.53068515709103], [-122.86801456115734, 38.53349771146242], [-122.86802443869684, 38.534942579885524], [-122.86676999118549, 38.53520528011717], [-122.8664835425412, 38.535676592835046]], "type": "LineString"}, "properties": {"Name": "J. Rochioli"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.86696754197459, 38.53550661155498], "type": "Point"}, "id": 1, "properties": {"Name": "J. Rochioli"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_a905d49ee1aacf48ceae05b9acd46150.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_a905d49ee1aacf48ceae05b9acd46150.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_a905d49ee1aacf48ceae05b9acd46150.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_a5f404d199537e02caf0efbd29952d70_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a5f404d199537e02caf0efbd29952d70 = L.geoJson(null, {
+                onEachFeature: geo_json_a5f404d199537e02caf0efbd29952d70_onEachFeature,
+            
+        });
+
+        function geo_json_a5f404d199537e02caf0efbd29952d70_add (data) {
+            geo_json_a5f404d199537e02caf0efbd29952d70
+                .addData(data);
+        }
+            geo_json_a5f404d199537e02caf0efbd29952d70_add({"features": [{"geometry": {"coordinates": [[-123.46760542874452, 39.07958987229745], [-123.464311407393, 39.083111763481526], [-123.46162114197656, 39.081485236760216], [-123.45976548035262, 39.08025153258606], [-123.45872666499383, 39.08027220936998], [-123.45854021095487, 39.07923836274571], [-123.4588598464501, 39.078928205803635], [-123.45873554375737, 39.07838370476452], [-123.45920611823618, 39.07778405951677], [-123.45924163329133, 39.07743943350604], [-123.4595701475501, 39.077149946355775], [-123.46006735832003, 39.07701898749255], [-123.46082205323896, 39.07639176009508], [-123.46175432343281, 39.07642622328325], [-123.46133702153647, 39.07697763201185], [-123.46210059521891, 39.077370508101154], [-123.46249126082392, 39.07700520233527], [-123.4636277425841, 39.077535928958866], [-123.46387634796906, 39.07730158262973], [-123.46765870132697, 39.07954162599202]], "type": "LineString"}, "properties": {"Name": "Savoy"}, "type": "Feature"}, {"geometry": {"coordinates": [-123.46503058725678, 39.080051656694536], "type": "Point"}, "id": 1, "properties": {"Name": "Savoy"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_a5f404d199537e02caf0efbd29952d70.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_a5f404d199537e02caf0efbd29952d70.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_a5f404d199537e02caf0efbd29952d70.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_27b0e36b392787f10430941ddc187a59_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_27b0e36b392787f10430941ddc187a59 = L.geoJson(null, {
+                onEachFeature: geo_json_27b0e36b392787f10430941ddc187a59_onEachFeature,
+            
+        });
+
+        function geo_json_27b0e36b392787f10430941ddc187a59_add (data) {
+            geo_json_27b0e36b392787f10430941ddc187a59
+                .addData(data);
+        }
+            geo_json_27b0e36b392787f10430941ddc187a59_add({"features": [{"geometry": {"coordinates": [[-122.5725402530309, 38.23727127855247], [-122.57612561422773, 38.233269288252984], [-122.57589917036307, 38.233091416905864], [-122.57604258481085, 38.23242143092506], [-122.57338564346033, 38.23101028981898], [-122.57026826625139, 38.23424757288706], [-122.5701625924477, 38.23456773590928], [-122.57063812456425, 38.236245604251536], [-122.57251760864452, 38.23728906468432]], "type": "LineString"}, "properties": {"Name": "Terra De Promissio"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.57629167306233, 38.2330499135289], "type": "Point"}, "id": 1, "properties": {"Name": "Terra De Promissio"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_27b0e36b392787f10430941ddc187a59.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_27b0e36b392787f10430941ddc187a59.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_27b0e36b392787f10430941ddc187a59.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_829208cc8b33777bfafc5bcbe883ed31_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_829208cc8b33777bfafc5bcbe883ed31 = L.geoJson(null, {
+                onEachFeature: geo_json_829208cc8b33777bfafc5bcbe883ed31_onEachFeature,
+            
+        });
+
+        function geo_json_829208cc8b33777bfafc5bcbe883ed31_add (data) {
+            geo_json_829208cc8b33777bfafc5bcbe883ed31
+                .addData(data);
+        }
+            geo_json_829208cc8b33777bfafc5bcbe883ed31_add({"features": [{"geometry": {"coordinates": [[-123.2290221295292, 38.561208545188435], [-123.22704557162919, 38.55983281824092], [-123.22649170100892, 38.55939971356648], [-123.22607901309573, 38.5593232830594], [-123.22540568018499, 38.55940820584033], [-123.22483008914817, 38.56013004542862], [-123.22397213269694, 38.56029139681576], [-123.22354858457578, 38.55974789596121], [-123.22305987520491, 38.559960201471625], [-123.22185439209017, 38.55853349638937], [-123.22191955333955, 38.55743797148108], [-123.22215847792084, 38.55728510621279], [-123.22263632708342, 38.5574549564904], [-123.2227666495822, 38.557675761252], [-123.22313589666257, 38.557896565334886], [-123.22345084270154, 38.55806641416814], [-123.22405901436288, 38.55801545956018], [-123.22449342269263, 38.558440080188234], [-123.2249821320635, 38.55818530811251], [-123.22522105664481, 38.55793053513378], [-123.22590524976383, 38.55785410306402], [-123.2261007335123, 38.55816832327528], [-123.22600299163807, 38.55852500401264], [-123.22639395913471, 38.55896660628278], [-123.22736051766813, 38.55936574446241], [-123.22795782912151, 38.55934026762324], [-123.22880492536416, 38.55991774041982], [-123.22940223681753, 38.56004512350006], [-123.22934793577642, 38.5604527478406], [-123.22949997869176, 38.5608603698694], [-123.22906557036202, 38.561200053127294]], "type": "LineString"}, "properties": {"Name": "Three Sisters"}, "type": "Feature"}, {"geometry": {"coordinates": [-123.22587266913929, 38.55985829490501], "type": "Point"}, "id": 1, "properties": {"Name": "Three Sisters"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_829208cc8b33777bfafc5bcbe883ed31.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_829208cc8b33777bfafc5bcbe883ed31.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_829208cc8b33777bfafc5bcbe883ed31.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_11453c1338f1e3c3b73839cd430353cd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_11453c1338f1e3c3b73839cd430353cd = L.geoJson(null, {
+                onEachFeature: geo_json_11453c1338f1e3c3b73839cd430353cd_onEachFeature,
+            
+        });
+
+        function geo_json_11453c1338f1e3c3b73839cd430353cd_add (data) {
+            geo_json_11453c1338f1e3c3b73839cd430353cd
+                .addData(data);
+        }
+            geo_json_11453c1338f1e3c3b73839cd430353cd_add({"features": [{"geometry": {"coordinates": [[-122.40615082316835, 38.44020659405086], [-122.40362176892506, 38.437407836472204], [-122.40392339924773, 38.43723821131343], [-122.40333560682413, 38.43655970669283], [-122.40782912521988, 38.43406978242169], [-122.41096917421959, 38.43755322914879], [-122.40616629139006, 38.44021265185023]], "type": "LineString"}, "properties": {"Name": "Beckstoffer To Kalon"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.40645245349103, 38.4382559562884], "type": "Point"}, "id": 1, "properties": {"Name": "Beckstoffer To Kalon"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_11453c1338f1e3c3b73839cd430353cd.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_11453c1338f1e3c3b73839cd430353cd.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_11453c1338f1e3c3b73839cd430353cd.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_6fdfed97a510c52404ffe55a92db5b2b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6fdfed97a510c52404ffe55a92db5b2b = L.geoJson(null, {
+                onEachFeature: geo_json_6fdfed97a510c52404ffe55a92db5b2b_onEachFeature,
+            
+        });
+
+        function geo_json_6fdfed97a510c52404ffe55a92db5b2b_add (data) {
+            geo_json_6fdfed97a510c52404ffe55a92db5b2b
+                .addData(data);
+        }
+            geo_json_6fdfed97a510c52404ffe55a92db5b2b_add({"features": [{"geometry": {"coordinates": [[-123.27772367587497, 38.91735468080768], [-123.2788593818227, 38.91624797828234], [-123.27893656572233, 38.91541579524801], [-123.27785599113122, 38.91472087204164], [-123.27668720636936, 38.91432622126533], [-123.2764225758572, 38.913914409419704], [-123.27610281398844, 38.9130821990218], [-123.27466939871474, 38.91345111823753], [-123.27472453007131, 38.91467797532451], [-123.27447092583053, 38.91539005747296], [-123.2745260571871, 38.91560453864727], [-123.275926393647, 38.915441533013734], [-123.27645565467134, 38.91663403926276], [-123.27698491569538, 38.91700294001549], [-123.27685260043941, 38.917157363017026], [-123.27716133603681, 38.91732894373533], [-123.27769059706114, 38.917363259829415]], "type": "LineString"}, "properties": {"Name": "Weir Vineyard"}, "type": "Feature"}, {"geometry": {"coordinates": [-123.27705107332363, 38.91394872716489], "type": "Point"}, "id": 1, "properties": {"Name": "Weir Vineyard"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_6fdfed97a510c52404ffe55a92db5b2b.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_6fdfed97a510c52404ffe55a92db5b2b.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_6fdfed97a510c52404ffe55a92db5b2b.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+
+        function geo_json_60081ad495fd2ab5af601109aeaaf0dd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_60081ad495fd2ab5af601109aeaaf0dd = L.geoJson(null, {
+                onEachFeature: geo_json_60081ad495fd2ab5af601109aeaaf0dd_onEachFeature,
+            
+        });
+
+        function geo_json_60081ad495fd2ab5af601109aeaaf0dd_add (data) {
+            geo_json_60081ad495fd2ab5af601109aeaaf0dd
+                .addData(data);
+        }
+            geo_json_60081ad495fd2ab5af601109aeaaf0dd_add({"features": [{"geometry": {"coordinates": [[-122.87202751911394, 38.52237910477231], [-122.8700936436307, 38.522452314238166], [-122.8685184708581, 38.522354701600676], [-122.86840410187779, 38.52225302162901], [-122.86864843560838, 38.521708014532976], [-122.8682533427677, 38.521561594012724], [-122.8680090090374, 38.521667342196196], [-122.86777507248684, 38.52161853536148], [-122.8680505977573, 38.520870159754594], [-122.86674055307515, 38.520300738318696], [-122.86676134743524, 38.51968657157795], [-122.86704726988579, 38.518714469137905], [-122.86732279515599, 38.51859651439213], [-122.86810778224746, 38.51868599732043], [-122.86849247790812, 38.51923916204359], [-122.86921508191928, 38.51944253035853], [-122.87008844504082, 38.51940592410443], [-122.87114895740251, 38.51977198580923], [-122.87080065187193, 38.520255997872084], [-122.87037956608123, 38.52091896709632], [-122.87112296445251, 38.52143550943731], [-122.87161683050331, 38.52150871986291], [-122.87199632757378, 38.52149245088583], [-122.87202751911394, 38.52238723916136]], "type": "LineString"}, "id": 0, "properties": {"Name": "Williams Selyem Estate"}, "type": "Feature"}, {"geometry": {"coordinates": [-122.87120831963152, 38.52084976270143], "type": "Point"}, "id": 1, "properties": {"Name": "Williams Selyem Estate"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_60081ad495fd2ab5af601109aeaaf0dd.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_60081ad495fd2ab5af601109aeaaf0dd.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Name"];
+    let aliases = ["Name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_60081ad495fd2ab5af601109aeaaf0dd.addTo(map_b7576a7304751fea044853e43bec113f);
+        
+    
+            var layer_control_d6f9e9cd5956236ab4ea265583e4df2f_layers = {
+                base_layers : {
+                    "https://services.arcgisonline.com/arcgis/rest/services/world_imagery/mapserver/tile/{z}/{y}/{x}" : tile_layer_ebd315af01db4ebf9dece0c41aa6dff7,
+                },
+                overlays :  {
+                    "Allen3.geojson" : geo_json_0a5a860755e8fba5d367c5006dc51f6b,
+                    "Bacigalupi.geojson" : geo_json_916eb9c300330d6c61208e9f56b158e0,
+                    "Bucher.geojson" : geo_json_3bde2bb5813cbc4a26c67c9cb8177b1f,
+                    "Calegari.geojson" : geo_json_a605b36cf52ff923717b5fe393b4b113,
+                    "Coastlands.geojson" : geo_json_7b0b0aecd04981213f0c2f8cc07cac28,
+                    "Drake.geojson" : geo_json_064d2b6f853de051e52c43466ced56e9,
+                    "Fanucchi.geojson" : geo_json_a06cb47c900ea826d0ea2e4f00a7ab0e,
+                    "Foss.geojson" : geo_json_9c0aeeaa032173fcfd921a7c7a298f8a,
+                    "Georges III.geojson" : geo_json_518734db6f3dcd05049ac9c7386f03b7,
+                    "Heintz.geojson" : geo_json_df1be94ff75274d075e8b758a1e4dea9,
+                    "Hirsch.geojson" : geo_json_09a937d187102a8b7f1290575e198dcb,
+                    "Martaella.geojson" : geo_json_826128774ff5545fd27dcdee7d0ee7d1,
+                    "Missouri Hopper.geojson" : geo_json_5f00b4724dc5f9d4a28be0174001a237,
+                    "Olivet.geojson" : geo_json_b2f30c24833b8cea670814d48ef94d3a,
+                    "Rochioli.geojson" : geo_json_a905d49ee1aacf48ceae05b9acd46150,
+                    "Savoy.geojson" : geo_json_a5f404d199537e02caf0efbd29952d70,
+                    "TDP.geojson" : geo_json_27b0e36b392787f10430941ddc187a59,
+                    "Three Sisters.geojson" : geo_json_829208cc8b33777bfafc5bcbe883ed31,
+                    "To Kalon.geojson" : geo_json_11453c1338f1e3c3b73839cd430353cd,
+                    "Weir.geojson" : geo_json_6fdfed97a510c52404ffe55a92db5b2b,
+                    "WSE.geojson" : geo_json_60081ad495fd2ab5af601109aeaaf0dd,
+                },
+            };
+            let layer_control_d6f9e9cd5956236ab4ea265583e4df2f = L.control.layers(
+                layer_control_d6f9e9cd5956236ab4ea265583e4df2f_layers.base_layers,
+                layer_control_d6f9e9cd5956236ab4ea265583e4df2f_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b7576a7304751fea044853e43bec113f);
+
+        
+</script>
+</html>
