@@ -64,17 +64,6 @@ from folium.plugins import Fullscreen
 
 Fullscreen(position='topright').add_to(m)
 
-# Add a search control to easily find features by 'Name'
-from folium.plugins import Search
-
-search = Search(
-    layer=geojson_layer,
-    geom_type='LineString',
-    placeholder='Search Vineyard...',
-    search_label='Name',
-    collapsed=False
-).add_to(m)
-
 # Save the map to an HTML file
 m.save('sonoma_county_map3.html')
 
