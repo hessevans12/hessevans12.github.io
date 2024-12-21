@@ -4,11 +4,12 @@ import os
 import json
 
 # Initialize a map centered on Sonoma County, CA
-m = folium.Map(location=[38.576, -122.945], zoom_start=10, tiles='https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', attr='Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community')
-
+m = folium.Map(location=[38.576, -122.945], zoom_start=10,
+               tiles='https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+               attr='ESRI World Imagery')
 
 # Directory containing GeoJSON files
-geojson_directory = r'C:\Users\hessx\OneDrive\Desktop\WSVineyards'
+geojson_directory = r'WSVineyards'
 
 # Iterate through all files in the directory
 for filename in os.listdir(geojson_directory):
@@ -26,7 +27,6 @@ for filename in os.listdir(geojson_directory):
 
                 if geometry_type == 'Point':
                     coords = feature['geometry']['coordinates']
-                    popup_content = '<br>'.join([f"<b>{key}</b>: {value}" for key, value in properties.items()])
                     folium.CircleMarker(
                         location=[coords[1], coords[0]],
                         radius=properties.get('marker-size', 5),
@@ -34,7 +34,9 @@ for filename in os.listdir(geojson_directory):
                         fill=True,
                         fill_color=properties.get('marker-color', 'red'),
                         fill_opacity=properties.get('marker-opacity', 0.8),
-                        popup=folium.Popup(html=popup_content, max_width=300)
+                        popup=folium.Popup(
+                            html='<br>'.join([f"<b>{key}</b>: {value}" for key, value in properties.items()]),
+                            max_width=300)
                     ).add_to(m)
                 else:
                     # Add GeoJSON to the map with enhanced styling for non-point features
@@ -62,7 +64,7 @@ from folium.plugins import Fullscreen
 
 Fullscreen(position='topright').add_to(m)
 
-m.save('sonoma_county_map4.html')
+# Save the map to an HTML file
+m.save('index.html')
 
-print("Map has been saved as 'sonoma_county_map4.html'")
-
+print("Map has been saved as 'index.html'")
