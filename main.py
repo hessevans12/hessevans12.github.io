@@ -53,12 +53,13 @@ for filename in os.listdir(geojson_directory):
                     )
                     geojson_layer.add_to(m)
 
+from folium.plugins import FloatImage
 
-from folium.plugins import MiniMap
+url = (
+    "https://i.imgur.com/Cz6uDCr.png"
+)
 
-minimap = MiniMap(toggle_display=True)
-minimap.add_to(m)
-
+FloatImage(url, bottom=-0, left=3).add_to(m)
 
 from folium.plugins import Fullscreen
 
